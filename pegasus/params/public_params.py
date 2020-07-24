@@ -295,3 +295,18 @@ def billsum_transformer(param_overrides):
           "learning_rate": 0.0001,
           "batch_size": 8,
       }, param_overrides)
+
+@registry.register("new_params")
+def new_params(param_overrides):
+    return transformer_params(
+        {
+        "train_pattern": "tfrecord:/Users/c325018/ComplaintsProjects/pegasus/pegasus/data/testdata/emails_complains_pattern.tfrecords",
+        "dev_pattern": "tfrecord:/Users/c325018/ComplaintsProjects/pegasus/pegasus/data/testdata/emails_complains_pattern.tfrecords",
+        "test_pattern": "tfrecord:/Users/c325018/ComplaintsProjects/pegasus/pegasus/data/testdata/emails_complains_pattern.tfrecords",
+        "max_input_len": 512,
+        "max_output_len": 32,
+        "train_steps": 32000,
+        "learning_rate": 0.0001,
+        "batch_size": 8,
+        }, param_overrides)
+
