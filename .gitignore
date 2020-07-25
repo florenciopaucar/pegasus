@@ -13,3 +13,7 @@ venv.bak/
 
 # Checkpoints
 ckpt/
+
+# Sensitive data
+utils/output.csv
+utils/dic_data.npy
