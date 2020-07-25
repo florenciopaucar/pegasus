@@ -300,9 +300,9 @@ def billsum_transformer(param_overrides):
 def new_params(param_overrides):
     return transformer_params(
         {
-        "train_pattern": "tfrecord:/Users/c325018/ComplaintsProjects/pegasus/pegasus/data/testdata/emails_complains_pattern.tfrecords",
-        "dev_pattern": "tfrecord:/Users/c325018/ComplaintsProjects/pegasus/pegasus/data/testdata/emails_complains_pattern.tfrecords",
-        "test_pattern": "tfrecord:/Users/c325018/ComplaintsProjects/pegasus/pegasus/data/testdata/emails_complains_pattern.tfrecords",
+        "train_pattern": "tfrecord:/Users/c325018/ComplaintsProjects/pegasus/pegasus/data/testdata/emails_complains_pattern_train.tfrecords",
+        "dev_pattern": "tfrecord:/Users/c325018/ComplaintsProjects/pegasus/pegasus/data/testdata/emails_complains_pattern_dev.tfrecords",
+        "test_pattern": "tfrecord:/Users/c325018/ComplaintsProjects/pegasus/pegasus/data/testdata/emails_complains_pattern_test.tfrecords",
         "max_input_len": 512,
         "max_output_len": 32,
         "train_steps": 32000,
