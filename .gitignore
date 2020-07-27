@@ -16,7 +16,7 @@ ckpt/
 
 # Sensitive data
 utils/output.csv
-utils/dic_data.npy
+#utils/dic_data.npy
 pegasus/data/testdata/emails_complains_pattern.tfrecords
 pegasus/data/testdata/emails_complains_pattern_dev.tfrecords
 pegasus/data/testdata/emails_complains_pattern_test.tfrecords
