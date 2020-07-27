@@ -1,14 +1,19 @@
-import numpy as np
+import itertools
+import os
+import time
 import tensorflow as tf
-
-from pegasus.eval import text_eval
-from pegasus.ops import public_parsing_ops
+import numpy as np
+from absl import logging
+from pegasus.data import infeed
+from pegasus.params import all_params
 from pegasus.params import estimator_utils
 from pegasus.params import registry
+from pegasus.eval import text_eval
+from pegasus.ops import public_parsing_ops
 
 tf.enable_eager_execution()
 
-
+logging.info("this is a begining ....")
 class InferencePegasus():
 
     def __init__(self, param_overrides, model_dir, vocab_filename, encoder_type, params_transformer,
